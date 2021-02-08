@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<!-- <app-test></app-test> -->
+<app-header (selectedNavegator)="ChangeNavigator($event)"></app-header>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-12">
+       <!-- <app-recipes *ngIf="selectedNav=='recipe'"></app-recipes>
+       <app-shopping-list *ngIf="selectedNav!='recipe'"></app-shopping-list> -->
+       <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
