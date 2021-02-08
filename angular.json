@@ -84,7 +84,10 @@
               "src/assets"
             ],
             "styles": [
-              "../test/node_modules/bootstrap/dist/css/bootstrap.css",
+             
+               {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              },
               "src/styles.css"
             ],
             "scripts": [
