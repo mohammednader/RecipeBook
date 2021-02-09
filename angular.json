@@ -24,7 +24,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
 
+=======
+              "src/styles.css"
+>>>>>>> 31fff25345a2a67cf33a91229645d491fc59e979
             ],
             "scripts": []
           },
