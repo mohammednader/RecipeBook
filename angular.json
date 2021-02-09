@@ -25,8 +25,11 @@
             ],
             "styles": [
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 31fff25345a2a67cf33a91229645d491fc59e979
               "src/styles.css"
 >>>>>>> 31fff25345a2a67cf33a91229645d491fc59e979
             ],
@@ -89,6 +92,7 @@
             ],
             "styles": [
               {
+
                 "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
               },
               "src/styles.css"
