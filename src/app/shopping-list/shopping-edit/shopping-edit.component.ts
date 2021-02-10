@@ -22,7 +22,7 @@ export class ShoppingEditComponent implements OnInit {
   constructor(private shoppingService: ShoppingService ) { }
 
   ngOnInit() {
-    this.shoppingService.SelectedChanged.subscribe((index)=>{
+    this.shoppingService.SelectedChanged.subscribe((index) => {
       this.editMode = true;
       this.selectedEditIndex = index;
       this.Ingredint = this.shoppingService.GetIngredientById(index);
@@ -40,9 +40,9 @@ export class ShoppingEditComponent implements OnInit {
     // console.log(form);
     // var name= this.nameElementRef.nativeElement.value;
     // var Amount= this.AmountElementRef.nativeElement.value;
-    let newIngrendient = new Ingredient(form.value.name , form.value.amount);
+    const newIngrendient = new Ingredient(form.value.name , form.value.amount);
     // this.newIngredent.emit(newIngrendient);
-    if(this.editMode)
+    if (this.editMode)
     {
       this.shoppingService.EditIngredientbyIndex(this.selectedEditIndex, newIngrendient);
     }
@@ -59,6 +59,7 @@ export class ShoppingEditComponent implements OnInit {
        this.editMode = false;
   }
   onDelete(){
-this.shoppingService.DeleteIngredientIndex(this.selectedEditIndex);
+     this.shoppingService.DeleteIngredientIndex(this.selectedEditIndex);
+     this.onClear();
   }
 }

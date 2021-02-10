@@ -4,7 +4,7 @@ import { Ingredient } from "../shopping-list/ingediant.model";
 
 export class ShoppingService
 {
- private Ingredients: Ingredient[] = [new Ingredient('Apple',5),new Ingredient('Tomatos',10)];
+ private Ingredients: Ingredient[] = [new Ingredient('Apple', 5), new Ingredient('Tomatos', 10)];
 
   Ingredientchanged = new Subject<Ingredient[]>();
   SelectedChanged = new Subject<number>();
@@ -32,15 +32,14 @@ export class ShoppingService
     this.Ingredientchanged.next(this.Ingredients.slice());
   }
 
-  EditIngredientbyIndex(index: number,ingrident: Ingredient)
+  EditIngredientbyIndex(index: number, ingrident: Ingredient)
   {
     this.Ingredients[index] = ingrident;
     this.Ingredientchanged.next(this.Ingredients.slice());
   }
   DeleteIngredientIndex(index: number){
-        this.Ingredients.splice(index);
+        this.Ingredients.splice(index, 1);
         this.Ingredientchanged.next(this.Ingredients.slice());
-
   }
 
 }
